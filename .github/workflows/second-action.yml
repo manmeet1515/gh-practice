@@ -1,0 +1,16 @@
+name: Second Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: Ubuntu-latest
+    steps:
+      - name: First Output
+        run: |
+          echo "First Step"
+          echo "Second Step"
+      - name: Second Output
+        run: |
+          echo "Third step"
+          echo "Forth step"
+      
+  
